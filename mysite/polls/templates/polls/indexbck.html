@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Voting App</h1>
+
+<a>Choose Your Candidate</a>
+{% if latest_question_list %}
+
+        {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+        <form action="/polls/{{question.id}}/" method="post">
+        {% csrf_token %}
+
+            {% for question in latest_question_list %}
+
+    <input type="radio" name="question" id="question{{ forloop.counter }}" value="{{ question.id }}">
+    <label for="question{{ forloop.counter }}">{{ question.Name }}</label><br>
+
+            {% endfor %}
+    input type="submit" value="Vote">
+        </form>
+
+<
+
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+
+
+
+
+
+
+
