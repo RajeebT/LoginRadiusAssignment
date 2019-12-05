@@ -1,5 +1,8 @@
-# LoginRadiusAssignment
+# LoginRadiusAssignment 
+
 Voting App. User Can Register, login and vote for available candidates.Admin can access manage User  access Candidates vote count.
+
+Follow the bellow steps:----------------------
 
 Ensure python 3.8 and python django module is installed in the system.
 
@@ -12,7 +15,7 @@ Known issue: After registering a new user. URL is not redirected correcty. Thoug
 
 After Registering. 
 
-Use http://127.0.0.1:8000/polls/login/ to login
+Use http://127.0.0.1:8000/polls/ to login
 
 Admin URL: http://127.0.0.1:8000/admin/
 Admin can manage User. Create new Candidates for Voting List.
